@@ -7,7 +7,7 @@ const Card = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch('https://openapi.programming-hero.com/api/videos/category/${id}'); 
+        const response = await fetch('https://openapi.programming-hero.com/api/videos/category/1000'); 
         const result = await response.json();
         if (result.status) {
           setCategories(result.data);
